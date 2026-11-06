@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Un espacio para aprender, crear y descubrir qué sigue con .NET.">
+  <title>¿Y ahora qué? — .NET</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101827;
+      --surface: #172235;
+      --text: #f4f7fb;
+      --muted: #aab7ca;
+      --accent: #a78bfa;
+      --accent-2: #67e8f9;
+      --line: rgba(255,255,255,.12);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin-inline: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight: 800; letter-spacing: -.03em; text-decoration:none; }
+    .brand span { color: var(--accent-2); }
+    .nav-link { color: var(--muted); text-decoration:none; font-size:.95rem; }
+    .hero { padding: 100px 0 84px; background: radial-gradient(ellipse at 75% 15%, rgba(167,139,250,.2), transparent 38%); }
+    .eyebrow { color: var(--accent-2); font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:.78rem; }
+    h1 { max-width: 760px; margin: 14px 0 18px; font-size:clamp(2.7rem, 8vw, 5.6rem); line-height:1.02; letter-spacing:-.06em; }
+    h1 span { color:var(--accent); }
+    .intro { max-width:650px; color:var(--muted); font-size:1.12rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .button { display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; background:var(--accent); color:#17132b; }
+    .button.secondary { background:transparent; color:var(--text); border:1px solid var(--line); }
+    section { padding:65px 0; }
+    h2 { font-size:clamp(1.8rem, 4vw, 2.5rem); letter-spacing:-.04em; margin:0 0 12px; }
+    .section-intro { color:var(--muted); max-width:650px; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+    .card { padding:22px; background:var(--surface); border:1px solid var(--line); border-radius:16px; }
+    .card .icon { font-size:1.5rem; }
+    .card h3 { margin:12px 0 7px; }
+    .card p { margin:0; color:var(--muted); }
+    .callout { padding:28px; border:1px solid var(--line); border-radius:16px; background:linear-gradient(120deg, rgba(167,139,250,.14), rgba(103,232,249,.07)); }
+    .callout p { color:var(--muted); margin-bottom:0; }
+    footer { border-top:1px solid var(--line); padding:25px 0; color:var(--muted); font-size:.9rem; }
+    @media (max-width:700px) { .hero { padding:72px 0 60px; } .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">¿Y ahora qué? <span>.NET</span></a>
+      <a class="nav-link" href="#ruta">Explorar la ruta ↓</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <p class="eyebrow">Aprender · Crear · Compartir</p>
+        <h1>¿Y ahora qué? <span>Construyamos con .NET.</span></h1>
+        <p class="intro">Un punto de partida para explorar programación, desarrollar proyectos y descubrir el siguiente paso en tu camino con .NET.</p>
+        <div class="actions">
+          <a class="button" href="#ruta">Ver la ruta</a>
+          <a class="button secondary" href="https://dotnet.microsoft.com/learn" target="_blank" rel="noreferrer">Aprender .NET ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ruta">
+      <div class="wrap">
+        <p class="eyebrow">Tu siguiente paso</p>
+        <h2>Una ruta para empezar</h2>
+        <p class="section-intro">Este espacio está en construcción. Aquí iremos agregando recursos, ideas y proyectos para avanzar paso a paso.</p>
+        <div class="grid">
+          <article class="card">
+            <span class="icon" aria-hidden="true">🧭</span>
+            <h3>1. Explora los fundamentos</h3>
+            <p>Conoce C#, .NET y las herramientas básicas para preparar tu entorno.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">🛠️</span>
+            <h3>2. Crea un proyecto</h3>
+            <p>Practica con una aplicación pequeña y aprende construyendo algo real.</p>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">🚀</span>
+            <h3>3. Comparte lo que haces</h3>
+            <p>Documenta tus avances, mejora tu código y sigue con el próximo reto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap callout">
+        <p class="eyebrow">En progreso</p>
+        <h2>La página crece contigo.</h2>
+        <p>Agrega aquí tus ideas, enlaces, proyectos y contenido. Este archivo es una base sencilla que puedes editar directamente en GitHub.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Hecho para aprender y construir, paso a paso. <span aria-hidden="true">✦</span></div>
+  </footer>
+</body>
+</html>
